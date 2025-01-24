@@ -52,5 +52,8 @@ PRODUCT_SOONG_NAMESPACES += \
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/haydn/haydn-vendor.mk)
 
-# Call the Leica Camera setup
-$(call inherit-product-if-exists, vendor/xiaomi/haydn-miuicamera/products/miuicamera.mk)
+# Call the Leica setup
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera-haydn/device.mk)
+
+# Sign Rom
+-include vendor/lineage-priv/keys/keys.mk

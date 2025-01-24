@@ -19,16 +19,16 @@ git clone --depth=1 https://gitlab.com/Alucard_Storm/vendor_xiaomi_haydn-firmwar
 
 # Xiaomi
 echo 'Cloning hardware xiaomi'
-rm -rf hardware/xiaomi && git clone --depth=1 https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.0 hardware/xiaomi
+rm -rf hardware/xiaomi && git clone --depth=1 https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.1 hardware/xiaomi
 
 # Camera
 echo 'Cloning Leica camera'
-git clone --depth=1 https://gitlab.com/Alucard_Storm/haydn-miuicamera -b fourteen-leica vendor/xiaomi/haydn-miuicamera
+git clone --depth=1  https://gitlab.com/1xtAsh/proprietary-vendor-xiaomi-miuicamera-haydn -b fifteen vendor/xiaomi/miuicamera-haydn
 rm -rf hardware/xiaomi/megvii
 
 # Priv-keys
 echo 'Cloning private keys'
-git clone https://github.com/1xtAsh/vendor_lineage-priv_keys -b lineage-21 vendor/pixelage-priv/keys
+git clone https://github.com/ItsVixano/android_vendor_lineage-priv_keys vendor/lineage-priv/keys
 
 # Leica patch
 echo 'Adding Leica camera patch'
